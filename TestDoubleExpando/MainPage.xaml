@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="TestDoubleExpando.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:TestDoubleExpando"
+    BindingContext="{Binding Source={x:Static local:ViewModel.Instance}}">
+    <StackLayout BackgroundColor="Black" VerticalOptions="CenterAndExpand">
+        <Label
+            FontSize="36"
+            HorizontalTextAlignment="Center"
+            Text="{Binding Username}"
+            TextColor="Red" />
+        <Label
+            x:Name="LabelWithExpando"
+            FontSize="36"
+            HorizontalTextAlignment="Center"
+            TextColor="Red" />
+        <Label
+            x:Name="LabelWithExpando2"
+            FontSize="36"
+            HorizontalTextAlignment="Center"
+            TextColor="Red" />
+    </StackLayout>
+</ContentPage>
